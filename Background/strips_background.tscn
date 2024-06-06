@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://chc4bm3ce1vjx"]
+
+[sub_resource type="GDScript" id="GDScript_xlrcd"]
+script/source = "extends Node2D
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	var sprite = Sprite2D.new()
+	sprite.texture = load(\"\")
+	$Node.add_child(sprite)
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[node name="StripsBackground" type="Node2D"]
+script = SubResource("GDScript_xlrcd")
